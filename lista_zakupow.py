@@ -9,7 +9,11 @@ zakupy_dict = {
 
 for k,v in zakupy_dict.items():
           
+
      print (f"Я йду до {k} і купую там {v}".upper())
+
+ 
+
      
      x+=len(v)
 
@@ -17,5 +21,5 @@ for k,v in zakupy_dict.items():
 #print(jj)
   
 print(f"Разом купую {x} товарів")
+
 print('next commit')
- 
