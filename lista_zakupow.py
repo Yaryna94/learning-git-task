@@ -1,3 +1,6 @@
+
+print("Привіт, Артем!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!".upper())
+
 print("Список покупок")
 x=0
 
@@ -10,11 +13,9 @@ zakupy_dict = {
 for k,v in zakupy_dict.items():
           
 
-     print (f"Я йду до {k} і купую там {v}".upper())
+     print (f"Я йду до {k} і купую там {v}".title())
 
- 
 
-     
      x+=len(v)
 
 #jj = sum([len(v) for v in zakupy_dict.values()])
@@ -22,4 +23,4 @@ for k,v in zakupy_dict.items():
   
 print(f"Разом купую {x} товарів")
 
-print('next commit')
+
