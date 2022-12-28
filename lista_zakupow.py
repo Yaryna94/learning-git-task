@@ -9,7 +9,7 @@ zakupy_dict = {
 
 for k,v in zakupy_dict.items():
           
-     print (f"Я йду до {k} і купую там {v}".title())
+     print (f"Я йду до {k} і купую там {v}")
      
      x+=len(v)
 
