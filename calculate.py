@@ -1,20 +1,31 @@
+
+import logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG)
+
+
 def calculate():
 
   operation = input('''Введи дію, використовуючи відповідне число: 1 Додавання, 2 Віднімання, 3 Множення, 4 Ділення: ''')
-  number_1 = int(input('Введи компонент 1: '))
-  number_2 = int(input('Введи компонент 2: '))
-  if operation == '1':
-     print('{} + {} ='.format(number_1, number_2))
-     print(number_1 + number_2)
-  elif operation == '2':
-     print('{} - {} = '.format(number_1, number_2))
-     print(number_1 - number_2)
-  elif operation == '3':
-     print('{} * {} = '.format(number_1, number_2))
-     print(number_1 * number_2)
-  elif operation == '4':
-      print('{} / {} = '.format(number_1, number_2))
-      print(number_1 / number_2)
-  
+  number_1 = int(input('Введи перше число: '))
+  number_2 = int(input('Введи друге число: '))
 
-calculate( )
+  if operation == '1':
+    logger.info(f"Додаю:  {number_1} плюс {number_2} =  ")
+    return number_1 + number_2
+     
+  elif operation == '2':
+    logger.info(f"Від {number_1} відімаю {number_2} = ")  
+    return number_1 - number_2
+
+  elif operation == '3':
+    logger.info(f"Множимо:  {number_1} на {number_2} = ")
+    return number_1 * number_2
+
+  elif operation == '4':
+    logger.info(f"Ділимо:  {number_1} на {number_2} = ")
+    return number_1 / number_2
+  
+if __name__ == "__main__":
+
+   print (calculate( ))
