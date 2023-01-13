@@ -4,12 +4,13 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 
+
+
+operation = input('''Введи дію, використовуючи відповідне число: 1 Додавання, 2 Віднімання, 3 Множення, 4 Ділення: ''')
+number_1 = int(input('Введи перше число: '))
+number_2 = int(input('Введи друге число: '))
+
 def calculate():
-
-  operation = input('''Введи дію, використовуючи відповідне число: 1 Додавання, 2 Віднімання, 3 Множення, 4 Ділення: ''')
-  number_1 = int(input('Введи перше число: '))
-  number_2 = int(input('Введи друге число: '))
-
   if operation == '1':
     logger.info(f"Додаю:  {number_1} плюс {number_2} =  ")
     return number_1 + number_2
