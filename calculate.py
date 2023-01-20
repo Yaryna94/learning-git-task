@@ -24,6 +24,8 @@ def calculate():
     return number_1 * number_2
 
   elif operation == '4':
+    if number_1 == 0:
+         return print("На ноль ділити не можна")
     logger.info(f"Ділимо:  {number_1} на {number_2} = ")
     return number_1 / number_2
   
