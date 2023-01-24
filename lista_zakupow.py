@@ -18,9 +18,6 @@ for k,v in zakupy_dict.items():
 
 
      x+=len(v)
-
-#jj = sum([len(v) for v in zakupy_dict.values()])
-#print(jj)
   
 print(f"Разом купую {x} товарів")
 
