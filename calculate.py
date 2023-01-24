@@ -25,7 +25,7 @@ def calculate():
 
   elif operation == '4':
     if number_1 == 0:
-         return print("На ноль ділити не можна")
+     raise Exception("Вибачте, 0 ділити не можна!")
     logger.info(f"Ділимо:  {number_1} на {number_2} = ")
     return number_1 / number_2
   
